@@ -1,0 +1,24 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+/tentwelve-common/target/
+/tentwelve-models/target/
+/tentwelve-service-api/target/
+/tentwelve-service-manage/tentwelve-serviser-manage-base/target/
+/tentwelve-service-manage/tentwelve-serviser-manage-article/target/
+/tentwelve-service-manage/tentwelve-serviser-manage-user/target/
