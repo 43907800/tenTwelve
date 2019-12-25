@@ -1,4 +1,4 @@
-package com.tentwelve.framework.web;
+package com.tentwelve.web;
 
 import org.springframework.web.bind.annotation.ModelAttribute;
 

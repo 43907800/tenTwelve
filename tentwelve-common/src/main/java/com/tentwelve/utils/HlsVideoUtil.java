@@ -1,4 +1,4 @@
-package com.tentwelve.framework.utils;
+package com.tentwelve.utils;
 
 import java.io.BufferedReader;
 import java.io.File;

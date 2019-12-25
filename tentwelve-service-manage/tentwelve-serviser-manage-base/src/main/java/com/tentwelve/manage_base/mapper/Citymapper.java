@@ -1,7 +1,7 @@
 package com.tentwelve.manage_base.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.tentwelve.framework.entity.base.City;
+import com.tentwelve.entity.base.City;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

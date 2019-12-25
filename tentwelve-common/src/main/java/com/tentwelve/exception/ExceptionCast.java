@@ -1,6 +1,6 @@
-package com.tentwelve.framework.exception;
+package com.tentwelve.exception;
 
-import com.tentwelve.framework.model.response.ResultCode;
+import com.tentwelve.model.response.ResultCode;
 
 /**
  * @Author: Yinn

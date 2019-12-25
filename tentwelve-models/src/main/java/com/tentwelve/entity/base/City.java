@@ -1,4 +1,4 @@
-package com.tentwelve.framework.entity.base;
+package com.tentwelve.entity.base;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;

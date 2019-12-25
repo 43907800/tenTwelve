@@ -1,4 +1,4 @@
-package com.tentwelve.framework.utils;
+package com.tentwelve.utils;
 
 import java.io.IOException;
 import java.io.InputStream;

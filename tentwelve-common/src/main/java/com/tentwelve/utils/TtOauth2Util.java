@@ -1,4 +1,4 @@
-package com.tentwelve.framework.utils;
+package com.tentwelve.utils;
 
 import lombok.Data;
 import org.apache.commons.lang3.StringUtils;

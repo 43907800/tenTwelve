@@ -1,8 +1,9 @@
 package com.tentwelve.manage_base.controller;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tentwelve.api.base.LabelControllerApi;
-import com.tentwelve.framework.entity.base.Label;
-import com.tentwelve.framework.model.response.ResponseResult;
+import com.tentwelve.model.response.QueryResponseResult;
+import com.tentwelve.model.response.ResponseResult;
 import com.tentwelve.manage_base.service.LabelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,8 +29,8 @@ public class LabelController implements LabelControllerApi {
 
     @Override
     @GetMapping("findall")
-    public List<Label> findAll() {
-        return labelService.findAll();
+    public QueryResponseResult selectPage() {
+        return labelService.selectPage(new Page<>());
     }
 
 }

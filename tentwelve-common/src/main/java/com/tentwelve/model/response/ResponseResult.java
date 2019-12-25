@@ -1,4 +1,4 @@
-package com.tentwelve.framework.model.response;
+package com.tentwelve.model.response;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,7 +1,9 @@
 package com.tentwelve.manage_base;
 
-import com.tentwelve.framework.entity.base.Label;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.tentwelve.entity.base.Label;
 import com.tentwelve.manage_base.service.LabelService;
+import com.tentwelve.model.response.QueryResponseResult;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,9 +25,12 @@ public class LabelServiceTest {
     LabelService LabelService;
 
     @Test
-    public void testFindAll(){
-        List<Label> all = LabelService.findAll();
-        System.out.println(all);
+    public void selectPage(){
+        Page page = new Page();
+        page.setSize(2);
+        page.setCurrent(2);
+        QueryResponseResult result = LabelService.selectPage(page);
+        System.out.println(result);
     }
 
 }

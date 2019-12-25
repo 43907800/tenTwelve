@@ -1,6 +1,6 @@
 package com.tentwelve.entity.base.response;
 
-import com.tentwelve.framework.model.response.ResultCode;
+import com.tentwelve.model.response.ResultCode;
 import lombok.ToString;
 
 /**

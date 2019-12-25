@@ -1,4 +1,4 @@
-package com.tentwelve.framework.model.response;
+package com.tentwelve.model.response;
 
 import lombok.Data;
 import lombok.ToString;
@@ -17,4 +17,10 @@ public class QueryResult<T> {
     private List<T> list;
     //数据总数
     private long total;
+    // 总页数
+    private long pages;
+    // 当前页
+    private long current;
+    // 每页数
+    private long size;
 }

@@ -1,6 +1,6 @@
 package com.tentwelve.api.base;
 
-import com.tentwelve.framework.entity.base.Label;
+import com.tentwelve.model.response.QueryResponseResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
@@ -15,8 +15,8 @@ import java.util.List;
 @Api(value="文章标签操作接口",description = "提供文章标签CRUD")
 public interface LabelControllerApi {
 
-    @ApiOperation("查询全部")
-    public List<Label> findAll();
+    @ApiOperation("分页查询")
+    public QueryResponseResult selectPage();
 
 
 }

@@ -1,4 +1,4 @@
-package com.tentwelve.framework.utils;
+package com.tentwelve.utils;
 
 import org.apache.http.Consts;
 import org.apache.http.HttpEntity;

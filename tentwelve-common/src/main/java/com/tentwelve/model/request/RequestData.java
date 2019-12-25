@@ -1,4 +1,4 @@
-package com.tentwelve.framework.model.request;
+package com.tentwelve.model.request;
 
 import lombok.Data;
 import lombok.ToString;

@@ -1,9 +1,9 @@
-package com.tentwelve.framework.exception;
+package com.tentwelve.exception;
 
 import com.google.common.collect.ImmutableMap;
-import com.tentwelve.framework.model.response.CommonCode;
-import com.tentwelve.framework.model.response.ResponseResult;
-import com.tentwelve.framework.model.response.ResultCode;
+import com.tentwelve.model.response.CommonCode;
+import com.tentwelve.model.response.ResponseResult;
+import com.tentwelve.model.response.ResultCode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.converter.HttpMessageNotReadableException;

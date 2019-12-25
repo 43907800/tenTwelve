@@ -1,4 +1,4 @@
-package com.tentwelve.framework.client;
+package com.tentwelve.client;
 
 /**
  * @Author: Yinn
