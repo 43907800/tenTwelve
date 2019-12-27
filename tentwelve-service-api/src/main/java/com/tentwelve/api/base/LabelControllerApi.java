@@ -1,5 +1,6 @@
 package com.tentwelve.api.base;
 
+import com.tentwelve.entity.base.Label;
 import com.tentwelve.model.response.QueryResponseResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -16,7 +17,7 @@ import java.util.List;
 public interface LabelControllerApi {
 
     @ApiOperation("分页查询")
-    public QueryResponseResult selectPage();
+    public QueryResponseResult queryPage(Integer size, Integer current, Label label) ;
 
 
 }
