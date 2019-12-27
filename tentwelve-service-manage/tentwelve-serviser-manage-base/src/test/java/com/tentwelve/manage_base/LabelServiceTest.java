@@ -12,11 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
-/**
- * @author Administrator
- * @version 1.0
- * @create 2018-09-12 18:11
- **/
+
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class LabelServiceTest {
@@ -26,10 +22,7 @@ public class LabelServiceTest {
 
     @Test
     public void selectPage(){
-        Page page = new Page();
-        page.setSize(2);
-        page.setCurrent(2);
-        QueryResponseResult result = LabelService.selectPage(page);
+        QueryResponseResult result = LabelService.queryPage(2,2,null);
         System.out.println(result);
     }
 
