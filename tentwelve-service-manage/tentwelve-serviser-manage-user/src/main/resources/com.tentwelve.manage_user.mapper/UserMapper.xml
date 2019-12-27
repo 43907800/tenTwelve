@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tentwelve.manage_user.mapper.Usermapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.tentwelve.entity.user.User" id="userMap">
+        <result property="id" column="id"/>
+        <result property="loginname" column="loginname"/>
+        <result property="password" column="password"/>
+        <result property="nickname" column="nickname"/>
+        <result property="sex" column="sex"/>
+        <result property="birthday" column="birthday"/>
+        <result property="avatar" column="avatar"/>
+        <result property="email" column="email"/>
+        <result property="mobile" column="mobile"/>
+        <result property="regdate" column="regdate"/>
+        <result property="updatedate" column="updatedate"/>
+        <result property="lastdate" column="lastdate"/>
+        <result property="online" column="online"/>
+        <result property="interest" column="interest"/>
+        <result property="personality" column="personality"/>
+        <result property="fanscount" column="fanscount"/>
+        <result property="followcount" column="followcount"/>
+    </resultMap>
+
+
+</mapper>

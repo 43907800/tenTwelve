@@ -1,5 +1,5 @@
 server:
-  port: 10242
+  port: 10243
 spring:
   application:
     name: tentwelve-serviser-manage-article

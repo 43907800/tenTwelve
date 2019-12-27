@@ -12,11 +12,11 @@ import lombok.Data;
  *
  * @author Yinn
  * @email Yinn
- * @date 2019-12-24 16:22:19
+ * @date 2019-12-27 18:00:21
  */
 @Data
 @TableName("tb_base_label")
-public class Label implements Serializable {
+public class BaseLabel implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**

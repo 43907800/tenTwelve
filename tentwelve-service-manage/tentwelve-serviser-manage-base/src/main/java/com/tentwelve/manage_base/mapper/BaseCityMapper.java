@@ -1,17 +1,17 @@
 package com.tentwelve.manage_base.mapper;
 
+import com.tentwelve.entity.base.BaseCity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.tentwelve.entity.base.Label;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
- * 标签
+ * 城市
  * 
  * @author Yinn
  * @email Yinn
- * @date 2019-12-24 16:22:19
+ * @date 2019-12-27 18:00:21
  */
 @Mapper
-public interface Labelmapper extends BaseMapper<Label> {
+public interface BaseCityMapper extends BaseMapper<BaseCity> {
 	
 }

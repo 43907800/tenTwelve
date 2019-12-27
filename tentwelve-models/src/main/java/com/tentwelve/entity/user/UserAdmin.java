@@ -1,4 +1,4 @@
-package com.tentwelve.entity.base;
+package com.tentwelve.entity.user;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -8,15 +8,15 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * 城市
+ * 管理员
  *
  * @author Yinn
  * @email Yinn
- * @date 2019-12-24 16:22:19
+ * @date 2019-12-27 19:00:14
  */
 @Data
-@TableName("tb_base_city")
-public class City implements Serializable {
+@TableName("tb_user_admin")
+public class UserAdmin implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -25,12 +25,16 @@ public class City implements Serializable {
 	@TableId
 	private String id;
 	/**
-	 * 城市名称
+	 * 登陆名称
 	 */
-	private String name;
+	private String loginname;
 	/**
-	 * 是否热门
+	 * 密码
 	 */
-	private String ishot;
+	private String password;
+	/**
+	 * 状态
+	 */
+	private String state;
 
 }
