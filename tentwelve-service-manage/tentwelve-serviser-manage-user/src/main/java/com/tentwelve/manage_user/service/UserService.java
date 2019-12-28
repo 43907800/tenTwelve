@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tentwelve.manage_user.mapper.UserMapper;
 import com.tentwelve.model.response.CommonCode;
 import com.tentwelve.model.response.QueryResponseResult;
+import com.tentwelve.model.response.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 /**
@@ -28,5 +29,10 @@ public class UserService {
         return new QueryResponseResult(CommonCode.SUCCESS,userIPage) ;
     }
 
+    public ResponseResult save(User user) {
+        int insert = userMapper.insert(user);
+        if (insert== 0) return new ResponseResult(CommonCode.FAIL);
+        return new ResponseResult(CommonCode.SUCCESS);
+    }
 }
 

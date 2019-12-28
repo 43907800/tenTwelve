@@ -1,7 +1,6 @@
 package com.tentwelve.entity.user;
 
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -22,7 +21,7 @@ public class User implements Serializable {
 	/**
 	 * ID
 	 */
-	@TableId
+	@TableId(type = IdType.ID_WORKER_STR)
 	private String id;
 	/**
 	 * 登陆名称
@@ -59,10 +58,12 @@ public class User implements Serializable {
 	/**
 	 * 注册日期
 	 */
+	@TableField(fill = FieldFill.INSERT)
 	private Date regdate;
 	/**
 	 * 修改日期
 	 */
+	@TableField(fill = FieldFill.INSERT_UPDATE)
 	private Date updatedate;
 	/**
 	 * 最后登陆日期

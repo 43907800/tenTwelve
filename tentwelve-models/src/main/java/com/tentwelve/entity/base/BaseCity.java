@@ -1,5 +1,6 @@
 package com.tentwelve.entity.base;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
@@ -22,7 +23,7 @@ public class BaseCity implements Serializable {
 	/**
 	 * ID
 	 */
-	@TableId
+	@TableId(type = IdType.ID_WORKER_STR)
 	private String id;
 	/**
 	 * 城市名称

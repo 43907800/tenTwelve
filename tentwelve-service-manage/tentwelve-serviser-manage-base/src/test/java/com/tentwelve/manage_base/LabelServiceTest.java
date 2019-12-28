@@ -1,7 +1,9 @@
 package com.tentwelve.manage_base;
 
+import com.tentwelve.entity.base.BaseLabel;
 import com.tentwelve.manage_base.service.BaseLabelService;
 import com.tentwelve.model.response.QueryResponseResult;
+import com.tentwelve.model.response.ResponseResult;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,4 +24,11 @@ public class LabelServiceTest {
         System.out.println(result);
     }
 
+    @Test
+    public void save(){
+        BaseLabel baseLabel = new BaseLabel();
+        baseLabel.setLabelname("test");
+        baseLabel.setState("1");
+        ResponseResult save = LabelService.save(baseLabel);
+    }
 }

@@ -1,7 +1,6 @@
 package com.tentwelve.entity.article;
 
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -22,7 +21,7 @@ public class ArticleColumn implements Serializable {
 	/**
 	 * ID
 	 */
-	@TableId
+	@TableId(type = IdType.ID_WORKER_STR)
 	private String id;
 	/**
 	 * 专栏名称
@@ -39,6 +38,7 @@ public class ArticleColumn implements Serializable {
 	/**
 	 * 申请日期
 	 */
+	@TableField(fill = FieldFill.INSERT)
 	private Date createtime;
 	/**
 	 * 审核日期
